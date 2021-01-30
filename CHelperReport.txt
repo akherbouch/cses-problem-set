@@ -1,2 +1,2 @@
-40 src/com/akherbouch/cses/Repetitions.json
+42 src/com/akherbouch/cses/Number Spiral.json
 0
