@@ -1,2 +1,2 @@
-42 src/com/akherbouch/cses/Number Spiral.json
+39 src/com/akherbouch/cses/Coin Piles.json
 0

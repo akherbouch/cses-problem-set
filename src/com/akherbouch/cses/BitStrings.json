@@ -1,6 +1,6 @@
 {
-  "name" : "Digit Queries",
-  "testType" : "MULTI_NUMBER",
+  "name" : "BitStrings",
+  "testType" : "SINGLE",
   "input" : {
     "type" : "STANDARD",
     "fileName" : "input.txt"
@@ -10,24 +10,19 @@
     "fileName" : "output.txt"
   },
   "tests" : [ {
-    "input" : "3\n7\n19\n12\n",
-    "output" : "7\n4\n1\n",
+    "input" : "3\n",
+    "output" : "8\n",
     "index" : 0,
-    "active" : true
-  }, {
-    "input" : "2\n190\n99\n",
-    "output" : "1\n4\n",
-    "index" : 1,
     "active" : true
   } ],
   "location" : "src/com/akherbouch/cses",
   "vmArgs" : "-Xmx512M",
   "mainClass" : "Main",
-  "taskClass" : "com.akherbouch.cses.DigitQueries",
+  "taskClass" : "com.akherbouch.cses.BitStrings",
   "checkerClass" : "net.egork.chelper.checkers.TokenChecker",
   "checkerParameters" : "",
   "testClasses" : [ ],
-  "date" : "2021.01.30",
+  "date" : "2021.02.03",
   "contestName" : "CSES - CSES Problem Set",
   "truncate" : true,
   "inputClass" : "com.akherbouch.cses.utils.FastScanner",

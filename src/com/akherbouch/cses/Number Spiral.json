@@ -1,6 +1,6 @@
 {
   "name" : "Number Spiral",
-  "testType" : "SINGLE",
+  "testType" : "MULTI_NUMBER",
   "input" : {
     "type" : "STANDARD",
     "fileName" : "input.txt"
