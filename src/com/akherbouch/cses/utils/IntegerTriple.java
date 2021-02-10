@@ -2,7 +2,7 @@ package com.akherbouch.cses.utils;
 
 import java.util.Objects;
 
-class IntegerTriple implements Comparable<IntegerTriple> {
+public class IntegerTriple implements Comparable<IntegerTriple> {
     private final Integer _first, _second, _third;
 
     public IntegerTriple(Integer f, Integer s, Integer t) {
@@ -20,9 +20,9 @@ class IntegerTriple implements Comparable<IntegerTriple> {
             return this.third() - other.third();
     }
 
-    Integer first() { return _first; }
-    Integer second() { return _second; }
-    Integer third() { return _third; }
+    public Integer first() { return _first; }
+    public Integer second() { return _second; }
+    public Integer third() { return _third; }
 
     @Override
     public boolean equals(Object o) {

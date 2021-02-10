@@ -2,7 +2,7 @@ package com.akherbouch.cses.utils;
 
 import java.util.Objects;
 
-class IntegerPair implements Comparable<IntegerPair> {
+public class IntegerPair implements Comparable<IntegerPair> {
     private final Integer _first, _second;
 
     public IntegerPair(Integer f, Integer s) {
@@ -17,8 +17,8 @@ class IntegerPair implements Comparable<IntegerPair> {
             return this.second() - other.second();
     }
 
-    Integer first() { return _first; }
-    Integer second() { return _second; }
+    public Integer first() { return _first; }
+    public Integer second() { return _second; }
 
     @Override
     public boolean equals(Object o) {

@@ -6,19 +6,27 @@ import java.util.List;
 public final class PrintUtil {
 
     public static void printArray(PrintWriter out, List<Integer> arr) {
+        printArray(out, arr, " ");
+    }
+
+    public static void printArray(PrintWriter out, List<Integer> arr, String sep) {
         final StringBuilder buf = new StringBuilder();
         for (int i = 0; i < arr.size(); i++) {
             buf.append(arr.get(i));
-            if (i < arr.size()- 1) buf.append(" ");
+            if (i < arr.size()- 1) buf.append(sep);
         }
         out.println(buf.toString());
     }
 
     public static void printArray(PrintWriter out, int[] arr) {
+        printArray(out, arr, " ");
+    }
+
+    public static void printArray(PrintWriter out, int[] arr, String sep) {
         final StringBuilder buf = new StringBuilder();
         for (int i = 0; i < arr.length; i++) {
             buf.append(arr[i]);
-            if (i < arr.length- 1) buf.append(" ");
+            if (i < arr.length- 1) buf.append(sep);
         }
         out.println(buf.toString());
     }
