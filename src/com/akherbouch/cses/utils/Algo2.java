@@ -1,11 +1,62 @@
 package com.akherbouch.cses.utils;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
+import java.util.*;
+import java.util.concurrent.atomic.DoubleAccumulator;
 
 public final class Algo2 {
 
+
+    public static void shuffleAndSort(int[] a) {
+        shuffle(a);
+        Arrays.sort(a);
+    }
+
+    public static void shuffle(int[] a) {
+        Random r = new Random();
+        int n = a.length;
+        for (int i = 0; i < n; i++) {
+            int j = r.nextInt(n);
+            int temp = a[i];
+            a[i] = a[j];
+            a[j] = temp;
+        }
+    }
+
+    public static void shuffle(Object[] a) {
+        Random r = new Random();
+        int n = a.length;
+        for (int i = 0; i < n; i++) {
+            int j = r.nextInt(n);
+            Object temp = a[i];
+            a[i] = a[j];
+            a[j] = temp;
+        }
+    }
+
+    public static int upperBound(int[] a, int value) {
+        int low = 0;
+        int high = a.length;
+        while (low < high) {
+            int mid = (low + high) / 2;
+            if (a[mid] <= value) low = mid + 1;
+            else high = mid;
+        }
+        return low;
+    }
+
+    public static int floor(int[] a, int value) {
+        int low = -1;
+        int high = a.length;
+        while (high - low > 1) {
+            int mid = (high + low) / 2;
+            if (a[mid] <= value) {
+                low = mid;
+            } else {
+                high = mid;
+            }
+        }
+        return low;
+    }
 
     public static List<List<Integer>> permutations(int n, boolean repetition) {
         List<Integer> a = new ArrayList<>(n);

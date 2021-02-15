@@ -1,0 +1,39 @@
+{
+  "name" : "ConcertTickets",
+  "testType" : "SINGLE",
+  "input" : {
+    "type" : "STANDARD",
+    "fileName" : "input.txt"
+  },
+  "output" : {
+    "type" : "STANDARD",
+    "fileName" : "output.txt"
+  },
+  "tests" : [ {
+    "input" : "5 3\n5 3 7 8 5\n4 8 3\n",
+    "output" : "3\n8\n-1\n",
+    "index" : 0,
+    "active" : true
+  }, {
+    "input" : "10 10\n9 3 9 6 6 8 6 2 6 3\n9 5 4 6 3 9 3 3 5 2\n",
+    "output" : "9\n3\n3\n6\n2\n9\n-1\n-1\n-1\n-1\n",
+    "index" : 1,
+    "active" : true
+  }],
+  "location" : "src/com/akherbouch/cses",
+  "vmArgs" : "-Xmx512M",
+  "mainClass" : "Main",
+  "taskClass" : "com.akherbouch.cses.ConcertTickets",
+  "checkerClass" : "net.egork.chelper.checkers.TokenChecker",
+  "checkerParameters" : "",
+  "testClasses" : [ ],
+  "date" : "2021.02.14",
+  "contestName" : "CSES - CSES Problem Set",
+  "truncate" : true,
+  "inputClass" : "com.akherbouch.cses.utils.FastScanner",
+  "outputClass" : "java.io.PrintWriter",
+  "includeLocale" : false,
+  "failOnOverflow" : false,
+  "interactive" : false,
+  "interactor" : "net.egork.chelper.tester.Interactor"
+}

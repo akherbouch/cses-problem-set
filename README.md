@@ -8,7 +8,10 @@
 - [Tree Algorithms](#Tree-Algorithms)
 - [Mathematics](#Mathematics)
 - [String Algorithms](#String-Algorithms)
+- [Geometry](#Geometry)
+- [Advanced Techniques](#Advanced-Techniques)
 - [Additional Problems](#Additional-Problems)
+
 
 ## Introductory Problems
 * [1068 - Weird Algorithm](src/com/akherbouch/cses/WeirdAlgorithm.java)
@@ -23,20 +26,23 @@
 * [1618 - Trailing Zeros](src/com/akherbouch/cses/TrailingZeros.java)
 * [1754 - Coin Piles](src/com/akherbouch/cses/CoinPiles.java)
 * [1755 - Palindrome Reorder](src/com/akherbouch/cses/PalindromeReorder.java)
-* [1622 - Creating Strings I](src/com/akherbouch/cses/CreatingStrings.java)
+* [2205 - Gray Code](src/com/akherbouch/cses/GrayCode.java)
+* [2165 - Tower of Hanoi](src/com/akherbouch/cses/TowerOfHanoi.java)
+* [1622 - Creating Strings](src/com/akherbouch/cses/CreatingStrings.java)
 * [1623 - Apple Division](src/com/akherbouch/cses/AppleDivision.java)
 * [1624 - Chessboard and Queens](src/com/akherbouch/cses/ChessboardAndQueens.java)
+* [2431 -Digit Queries](src/com/akherbouch/cses/DigitQueries.java)
 * [1625 - Grid Paths](src/com/akherbouch/cses/GridPaths.java)
 
 ## Sorting and Searching
-* [1621 - Distinct Numbers]
-* [1084 - Apartments]
-* [1090 - Ferris Wheel]
-* [1091 - Concert Tickets]
-* [1619 - Restaurant Customers]
-* [1629 - Movie Festival]
-* [1640 - Sum of Two Values]
-* [1643 - Maximum Subarray Sum]
+* [1621 - Distinct Numbers](src/com/akherbouch/cses/DistinctNumbers.java)
+* [1084 - Apartments](src/com/akherbouch/cses/Apartments.java)
+* [1090 - Ferris Wheel](src/com/akherbouch/cses/FerrisWheel.java)
+* [1091 - Concert Tickets](src/com/akherbouch/cses/ConcertTickets.java)
+* [1619 - Restaurant Customers](src/com/akherbouch/cses/RestaurantCustomers.java)
+* [1629 - Movie Festival](src/com/akherbouch/cses/MovieFestival.java)
+* [1640 - Sum of Two Values](src/com/akherbouch/cses/SumOfTwoValues.java)
+* [1643 - Maximum Subarray Sum](src/com/akherbouch/cses/MaximumSubarraySum.java)
 * [1074 - Stick Lengths]
 * [1141 - Playlist]
 * [1073 - Towers]
@@ -174,6 +180,41 @@
 * [1733 - Finding Periods]
 * [1110 - Minimal Rotation]
 * [1111 - Longest Palindrome]
+
+## Geometry
+* [2189 - Point Location Test]
+* [2190 - Line Segment Intersection]
+* [2191 - Polygon Area]
+* [2192 - Point in Polygon]
+* [2193 - Polygon Lattice Points]
+* [2194 - Minimum Euclidean Distance]
+* [2195 - Convex Hull]
+
+## Advanced Techniques
+* [1628 - Meet in the Middle]
+* [2136 - Hamming Distance]
+* [2137 - Beautiful Subgrids]
+* [2138 - Reachable Nodes]
+* [2143 - Reachability Queries]
+* [2072 - Cut and Paste]
+* [2073 - Substring Reversals]
+* [2074 - Reversals and Sums]
+* [2076 - Necessary Roads]
+* [2077 - Necessary Cities]
+* [2078 - Eulerian Subgraphs]
+* [2084 - Monster Game I]
+* [2085 - Monster Game II]
+* [2086 - Subarray Squares]
+* [2087 - Houses and Schools]
+* [2088 - Knuth Division]
+* [2111 - Apples and Bananas]
+* [2112 - One Bit Positions]
+* [2113 - Signal Processing]
+* [2101 - New Roads Queries]
+* [2133 - Dynamic Connectivity]
+* [2121 - Parcel Delivery]
+* [2129 - Task Assignment]
+* [2130 - Distinct Routes II]
 
 ## Additional Problems
 * [1087 - Shortest Subsequence]
