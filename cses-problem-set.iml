@@ -8,5 +8,6 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="chelper" level="project" />
+    <orderEntry type="library" name="JavaAlgorithmsImplementation" level="project" />
   </component>
 </module>

@@ -1,2 +1,2 @@
-49 src/com/akherbouch/cses/Maximum Subarray Sum.json
+46 src/com/akherbouch/cses/JosephusProblemII.json
 0
