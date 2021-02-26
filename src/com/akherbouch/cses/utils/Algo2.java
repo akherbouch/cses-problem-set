@@ -1,5 +1,7 @@
 package com.akherbouch.cses.utils;
 
+import com.akherbouch.cses.NestedRangesCount;
+
 import java.util.*;
 import java.util.concurrent.atomic.DoubleAccumulator;
 
@@ -31,6 +33,18 @@ public final class Algo2 {
             a[i] = a[j];
             a[j] = temp;
         }
+    }
+
+    public static void compress(int[] a) {
+        TreeSet<Integer> sortedSetOfPoints = new TreeSet<>();
+        HashMap<Integer, Integer> toCompressedPoint = new HashMap<>();
+        for (int i = 0; i<a.length; i++)
+            sortedSetOfPoints.add(a[i]);
+        int comPos = 1;
+        for (int p : sortedSetOfPoints)
+            toCompressedPoint.put(p, comPos++);
+        for (int i = 0; i<a.length; i++)
+            a[i] = toCompressedPoint.get(a[i]);
     }
 
     public static int upperBound(int[] a, int value) {

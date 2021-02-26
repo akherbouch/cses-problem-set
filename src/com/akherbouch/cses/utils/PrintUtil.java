@@ -5,6 +5,14 @@ import java.util.List;
 
 public final class PrintUtil {
 
+    public static void log(Object... objects) {
+        final StringBuilder buf = new StringBuilder();
+        buf.append("LOG : ");
+        for (Object object : objects)
+            buf.append(object).append(" | ");
+        System.out.println(buf.toString());
+    }
+
     public static void printArray(PrintWriter out, List<Integer> arr) {
         printArray(out, arr, " ");
     }
