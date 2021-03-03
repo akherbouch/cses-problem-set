@@ -1,6 +1,7 @@
 package com.akherbouch.cses;
 
 import com.akherbouch.cses.ds.IntegerFenwickTree;
+import com.akherbouch.cses.utils.Algo2;
 import com.akherbouch.cses.utils.FastScanner;
 import com.akherbouch.cses.utils.PrintUtil;
 
@@ -37,22 +38,22 @@ public class NestedRangesCount {
             events[2*i + 1] = new Event(false, i, l, r);
         }
         Arrays.sort(events);
-        //HashMap<Integer, Integer> compress = new HashMap<>();
+        HashMap<Integer, Integer> compress = new HashMap<>();
         for (int i = 0, j; i<2*n; i = j) {
             j = i;
             while(j < 2*n && events[i].x() == events[j].x()) {
                 j++;
             }
-            //compress.put(events[i].x(), comSize++);
-            comArr[comSize++] = events[i].x();
+            compress.put(events[i].x(), comSize++);
+            //comArr[comSize++] = events[i].x();
         }
         IntegerFenwickTree BIT = new IntegerFenwickTree(comSize);
         IntegerFenwickTree BIT2 = new IntegerFenwickTree(comSize);
         int[] ansContains = new int[n];
         int[] ansContained = new int[n];
         for (Event e : events) {
-            int l = compress(e.l);//compress.get(e.l);
-            int r = compress(e.r);//compress.get(e.r);
+            int l = compress.get(e.l);//compress(e.l);//compress.get(e.l);
+            int r = compress.get(e.r);//compress(e.r);//compress.get(e.r);
             if (e.isStart) BIT2.update(l, 1);
             else {
                 ansContains[e.id] = BIT.query(l, r);

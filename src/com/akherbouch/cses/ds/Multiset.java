@@ -1,0 +1,40 @@
+package com.akherbouch.cses.ds;
+
+import java.util.TreeMap;
+
+public class Multiset<T extends Number> extends TreeMap<T, Integer> {
+
+    private int size = 0;
+
+    public void add(T value) {
+        Integer count = get(value);
+        size++;
+        if (count == null) {
+            put(value, 1);
+        } else {
+            put(value, count + 1);
+        }
+    }
+
+    @SuppressWarnings(value = "unchecked")
+    @Override
+    public Integer remove(Object key) {
+        if (!containsKey(key)) {
+            return null;
+        }
+
+        size--;
+
+        Integer value = get(key);
+        if (value > 1) {
+            return put((T) key, value - 1);
+        }
+
+        return super.remove(key);
+    }
+
+    @java.lang.Override
+    public int size() {
+        return size;
+    }
+}

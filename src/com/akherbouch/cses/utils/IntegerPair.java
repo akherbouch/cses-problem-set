@@ -11,10 +11,10 @@ public class IntegerPair implements Comparable<IntegerPair> {
     }
 
     public int compareTo(IntegerPair other) {
-        if (!this.first().equals(other.first()))
-            return this.first() - other.first();
+        if (!_first.equals(other._first))
+            return _first - other._first;
         else
-            return this.second() - other.second();
+            return _second - other._second;
     }
 
     public Integer first() { return _first; }
