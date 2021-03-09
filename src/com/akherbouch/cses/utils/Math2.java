@@ -20,6 +20,13 @@ public final class Math2 {
         return a * b % mod;
     }
 
+    public static int max(int num0, int... nums) {
+        int mx = num0;
+        for (int i = 0; i<nums.length; i++)
+            mx = Math.max(mx, nums[0]);
+        return mx;
+    }
+
 
 
 
